@@ -11,7 +11,7 @@ A atividade 1 consiste em extrair os comentários das 100 pull requests consecut
    pip install requests
    ```
 1. Inclua seu token do Github no script `extract_github_pr_comments.py` disponibilizado na pasta `script/` no campo:
-   ```bash
+   ```ini
    GITHUB_TOKEN = my_github_token
    ```
 3. Salve as alterações e execute o script:
