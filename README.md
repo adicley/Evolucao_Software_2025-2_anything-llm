@@ -1,6 +1,6 @@
 # Evolucao_Software_2025-2_anything-llm
 
-## Objetivos
+## Objetivo
 
 A atividade 1 consiste em extrair os comentários das 100 pull requests consecutivas de um projeto bem-sucedidos do github, no caso da equipe 3, o projeto escolhido foi [anything-llm](https://github.com/Mintplex-Labs/anything-llm), e, com os dados colatados na extração das pull requests, realizar a análise de sentimentos de todos os comentários utilizandos três LLM's de classificação de texto disponibilizados no portal [Hugging Face](https://huggingface.co/models?language=en&sort=trending&search=sentiment).
 
@@ -14,7 +14,7 @@ A atividade 1 consiste em extrair os comentários das 100 pull requests consecut
    ```bash
    GITHUB_TOKEN = my_github_token
    ```
-3. Após isso, execute o script:
+3. Salve as alterações e execute o script:
    ```bash
    python extract_github_pr_comments.py
    ```
