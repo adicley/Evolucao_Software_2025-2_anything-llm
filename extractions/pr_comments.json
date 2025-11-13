@@ -1,0 +1,678 @@
+[
+    {
+        "pr_id": 4570,
+        "comments": []
+    },
+    {
+        "pr_id": 4569,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "This is the same as #3483, and there is a reason it is not merged; there is a lot of considerations around doing this. Also, your PR would not work"
+            }
+        ]
+    },
+    {
+        "pr_id": 4552,
+        "comments": []
+    },
+    {
+        "pr_id": 4550,
+        "comments": []
+    },
+    {
+        "pr_id": 4549,
+        "comments": []
+    },
+    {
+        "pr_id": 4547,
+        "comments": []
+    },
+    {
+        "pr_id": 4545,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Changed the original `O(3N)` complexity of the batch creation to be `O(N)`. Otherwise LGTM"
+            }
+        ]
+    },
+    {
+        "pr_id": 4543,
+        "comments": []
+    },
+    {
+        "pr_id": 4542,
+        "comments": []
+    },
+    {
+        "pr_id": 4540,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Is this required? The app builds work already with no changes so I dont see why this is required at this time?"
+            }
+        ]
+    },
+    {
+        "pr_id": 4539,
+        "comments": []
+    },
+    {
+        "pr_id": 4537,
+        "comments": []
+    },
+    {
+        "pr_id": 4526,
+        "comments": [
+            {
+                "login": "antoniohof",
+                "author_association": "NONE",
+                "comment": "That doesnt seem to work. The Agent still doesnt use the system prompt"
+            },
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "@antoniohof you will need to provide any kind of reproducible steps, or something to trace how/why it seems not to work for you"
+            },
+            {
+                "login": "antoniohof",
+                "author_association": "NONE",
+                "comment": "it's only with the first message - which is weird. I'm using Ollama - maybe that's why? I will follow up on that. "
+            },
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Using ollama I am manually logging the full payload to Ollama and I see it set as the `system` prompt - that being said it may be lost in tool calling? What test case are you using to see if I can repro"
+            }
+        ]
+    },
+    {
+        "pr_id": 4519,
+        "comments": []
+    },
+    {
+        "pr_id": 4518,
+        "comments": []
+    },
+    {
+        "pr_id": 4516,
+        "comments": []
+    },
+    {
+        "pr_id": 4515,
+        "comments": []
+    },
+    {
+        "pr_id": 4512,
+        "comments": []
+    },
+    {
+        "pr_id": 4511,
+        "comments": []
+    },
+    {
+        "pr_id": 4507,
+        "comments": [
+            {
+                "login": "jaynedoezy-web",
+                "author_association": "CONTRIBUTOR",
+                "comment": "as"
+            }
+        ]
+    },
+    {
+        "pr_id": 4505,
+        "comments": []
+    },
+    {
+        "pr_id": 4504,
+        "comments": []
+    },
+    {
+        "pr_id": 4501,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Im guessing wrong origin to push this PR to?"
+            },
+            {
+                "login": "muddylemon",
+                "author_association": "NONE",
+                "comment": "> Im guessing wrong origin to push this PR to?\r\n\r\nyep, sorry!"
+            }
+        ]
+    },
+    {
+        "pr_id": 4500,
+        "comments": []
+    },
+    {
+        "pr_id": 4499,
+        "comments": []
+    },
+    {
+        "pr_id": 4495,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "We are implementing a whole new design for this issue. I appreciate you taking this work on, but ultimately we cannot use this for now as we are building this internally. \r\n\r\nIf you do spot an issue you would like to attack, do please ping me as there could be work occurring for this internally within the core team or has other requirements that are not explictly listed in the issue. I dont want you to ever have to do any work that we cannot get merged because of some external factor you were not aware of."
+            },
+            {
+                "login": "naaa760",
+                "author_association": "CONTRIBUTOR",
+                "comment": "@timothycarambat \r\nsure, I will make sure for the next time!"
+            }
+        ]
+    },
+    {
+        "pr_id": 4489,
+        "comments": []
+    },
+    {
+        "pr_id": 4484,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "This looks great and since it is in the community cloud-deployments docs, there is not really much to review since anything under there is simply for developer convenience.\r\n\r\n> This requires some additional changes that are not in scope for this change and would require setting up GitHub Pages. I am planning to submit a new PR with the changes necessary + details.\r\n\r\nThis part I am not too sure about. Can I understand more about why/how this works and is needed? Keep in mind I do not use this tooling daily, nor am I an expert in this"
+            },
+            {
+                "login": "sculley",
+                "author_association": "CONTRIBUTOR",
+                "comment": "> > This requires some additional changes that are not in scope for this change and would require setting up GitHub Pages. I am planning to submit a new PR with the changes necessary + details.\r\n> \r\n> This part I am not too sure about. Can I understand more about why/how this works and is needed? Keep in mind I do not use this tooling daily, nor am I an expert in this\r\n\r\n@timothycarambat - I\u2019d like to propose to introduce an official Helm chart repository for AnythingLLM.\r\n\r\nThe benefit here is that users who want to self-host or deploy to Kubernetes could install and manage AnythingLLM with Helm, which is one of the most common deployment tools in the Kubernetes ecosystem.\r\n\r\nAt a high level, a Helm repository is just a simple HTTP server that hosts an index.yaml file listing available charts ([Helm docs](https://helm.sh/docs/topics/chart_repository/)). Many open-source projects use GitHub Pages to host this.\r\n\r\n```bash\r\nhelm repo add anythingllm-repo https://mintplex-labs.github.io/helm-charts\r\nhelm repo update\r\nhelm install release-name anythingllm-repo/anythingllm --version 1.0.0\r\n```\r\n\r\n**Proposed approach:**\r\n\r\n- Create a dedicated repo in the _Mintplex-Labs_ org `(e.g. mintplex-labs/helm-charts)`\r\n- Use a `gh-pages` branch to host the index.yaml via GitHub Pages\r\n- Add a GitHub Actions workflow to package charts, publish .tgz files as releases, and update the repo index automatically\r\n- Add the Helm Chart to https://artifacthub.io/ (Think Docker Hub)\r\n\r\nThis pattern is widely adopted across open-source projects.\r\n\r\nI\u2019d be happy to help with this. In my day job I work with Kubernetes across different environments (cloud and on-prem) and I\u2019ve had quite a bit of experience creating and maintaining Helm charts.\r\n\r\nI recently migrated the company I work for from OpenWeb UI to AnythingLLM. The response from the teams after a demo was really positive. I think there\u2019s a lot of potential for AnythingLLM to grow in this space, and having an official Helm chart repo would make adoption even easier for other teams."
+            },
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Ahh, okay thank you for breaking that down for me. Totally agree with your approach + understand. Maybe for the first step I make that empty repo so that the work doesnt get crossed and mixed up between repos and then we can backlink it to the main repo and vice versa.\r\n\r\nReally awesome and I would greatly appreciate the help with that as it is certainly not my domain expertise.\r\n\r\n[Here is the new empty repo if you do have the time to contribute](https://github.com/Mintplex-Labs/helm-charts) Once we have a YAML to serve Ill enable GH Pages to serve from whatever directory we need to so that it can resolve for users who want to use this service/arch."
+            },
+            {
+                "login": "sculley",
+                "author_association": "CONTRIBUTOR",
+                "comment": "@timothycarambat - Great! I will start working on that at the weekend."
+            }
+        ]
+    },
+    {
+        "pr_id": 4478,
+        "comments": []
+    },
+    {
+        "pr_id": 4475,
+        "comments": []
+    },
+    {
+        "pr_id": 4468,
+        "comments": []
+    },
+    {
+        "pr_id": 4467,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Know bad models:\r\n- o4 deep research ones\r\n- o1-* (dont use responses API??)\r\n\r\nEverything else works"
+            }
+        ]
+    },
+    {
+        "pr_id": 4466,
+        "comments": []
+    },
+    {
+        "pr_id": 4461,
+        "comments": []
+    },
+    {
+        "pr_id": 4459,
+        "comments": []
+    },
+    {
+        "pr_id": 4458,
+        "comments": []
+    },
+    {
+        "pr_id": 4456,
+        "comments": []
+    },
+    {
+        "pr_id": 4451,
+        "comments": [
+            {
+                "login": "ArturTask",
+                "author_association": "NONE",
+                "comment": "needs review\r\n"
+            },
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "moved to #4487"
+            }
+        ]
+    },
+    {
+        "pr_id": 4450,
+        "comments": []
+    },
+    {
+        "pr_id": 4448,
+        "comments": []
+    },
+    {
+        "pr_id": 4442,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Beautiful PR, almost shed a tear. Thanks \ud83d\udc4d "
+            }
+        ]
+    },
+    {
+        "pr_id": 4441,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Closing this for a few reasons:\r\n- I think the idea of being able to report a RAG search failure is good, but the UI/UX for this should be in the message as a hint below the response if there was a failure. Not a big red failure in chat.\r\n- The idea of doing a pre-check is actually very useful, since all of the providers have a `heartbeat` we should just use that instead - some providers have it stubbed though.\r\n- In specific, I cannot replicate this issue using Postgres as a brew service. even when totally offline, the timeout is basically zero.\r\n\r\n**However** the biggest thing that we can do to allow people to override the timeout with no code change on our end is to have the user just add it in [their connection string](https://www.npgsql.org/doc/connection-string-parameters.html).\r\n\r\nAdding `Timeout=30;` or `Command Timeout=30;` as connection string vars would suffice without us having to implement code we need to maintain. The `pg` code would handle this as is currently."
+            }
+        ]
+    },
+    {
+        "pr_id": 4439,
+        "comments": []
+    },
+    {
+        "pr_id": 4435,
+        "comments": []
+    },
+    {
+        "pr_id": 4434,
+        "comments": [
+            {
+                "login": "angelplusultra",
+                "author_association": "CONTRIBUTOR",
+                "comment": "> Add a test suite for `sanitizeForJsonb` to `server/__tests__/utils/vectorDbProviders/pgvector/index.js` so we can validate this against known valid/invalid cases.\r\n\r\nFix in https://github.com/Mintplex-Labs/anything-llm/pull/4434/commits/0eb23b0b2c2077dd4e966c8698258dea87385f41"
+            },
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Beautiful work - great test case coverage"
+            }
+        ]
+    },
+    {
+        "pr_id": 4433,
+        "comments": []
+    },
+    {
+        "pr_id": 4430,
+        "comments": []
+    },
+    {
+        "pr_id": 4426,
+        "comments": []
+    },
+    {
+        "pr_id": 4425,
+        "comments": []
+    },
+    {
+        "pr_id": 4414,
+        "comments": []
+    },
+    {
+        "pr_id": 4412,
+        "comments": []
+    },
+    {
+        "pr_id": 4406,
+        "comments": []
+    },
+    {
+        "pr_id": 4404,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "- Image support was missing/broken and needed responses object updates\r\n- removed manual `runPromptTokenCalculation` (default `true`) to be false on streams since we now have usage on response queries"
+            }
+        ]
+    },
+    {
+        "pr_id": 4402,
+        "comments": [
+            {
+                "login": "angelplusultra",
+                "author_association": "CONTRIBUTOR",
+                "comment": "> Not a heavy code review atm, but current feedback:\r\n> \r\n>     * If i click on the slash command button `[/]` in the prompt box, keyboard nav does not work\r\n> \r\n>     * Keyboard nav does work if I type `/`\r\n> \r\n>     * If I type `/` nav down one or more, click \"Add new preset\" and add it. Then i type `/` again, my new preset is unreachable via keyboard nav (because qty state is out of sync probably). Does work on page reload.\r\n> \r\n> \r\n> Ideally, either way the modal pops up, this functionality for navigation becomes usable and is cleaned up and unmounted when the modal is dismissed.\r\n> \r\n> Instead of using JS state, you could probably more easily do this with DOM manipulation while still using events. This would make counting results on the fly easy, work on all cases, and when pressing enter all the logic we have around clicking the item would take over - simplifying things a lot (maybe?) ;)\r\n\r\nFixes in [3e85053](https://github.com/Mintplex-Labs/anything-llm/pull/4402/commits/3e85053755a50e7aecb3e54a2aef49c15deb4a93)\r\n\r\n1. I abstracted most of the logic related to slash commands into the custom hook `useSlashCommands` to keep the `PromptInput` comp as light as possible.\r\n2. I fixed the bug when the slash command popup would be triggered via the slash command button and wouldn't respond keyboard navigation/selection\r\n3. I also found a bug in the process where if a user had enough slash commands to cause vertical overflow, out of view slash commands would be highlighted but not visible, I added scroll-into-view logic when a slash command is highlighted.\r\n4. The bug where newly created slash commands would not be highlightable/selectable is now fixed."
+            }
+        ]
+    },
+    {
+        "pr_id": 4398,
+        "comments": []
+    },
+    {
+        "pr_id": 4397,
+        "comments": []
+    },
+    {
+        "pr_id": 4396,
+        "comments": []
+    },
+    {
+        "pr_id": 4395,
+        "comments": []
+    },
+    {
+        "pr_id": 4394,
+        "comments": []
+    },
+    {
+        "pr_id": 4393,
+        "comments": []
+    },
+    {
+        "pr_id": 4390,
+        "comments": []
+    },
+    {
+        "pr_id": 4389,
+        "comments": []
+    },
+    {
+        "pr_id": 4384,
+        "comments": []
+    },
+    {
+        "pr_id": 4379,
+        "comments": []
+    },
+    {
+        "pr_id": 4378,
+        "comments": []
+    },
+    {
+        "pr_id": 4369,
+        "comments": []
+    },
+    {
+        "pr_id": 4368,
+        "comments": []
+    },
+    {
+        "pr_id": 4359,
+        "comments": []
+    },
+    {
+        "pr_id": 4349,
+        "comments": [
+            {
+                "login": "Jonathanxoxox",
+                "author_association": "NONE",
+                "comment": "roles"
+            }
+        ]
+    },
+    {
+        "pr_id": 4347,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Seriously?"
+            },
+            {
+                "login": "AngeAnjara",
+                "author_association": "NONE",
+                "comment": "I'm sorry; I tried to edit the file and upload it to my server, but I made\r\nsome mistakes in the process.\r\n\r\nLe mar. 2 sept. 2025 \u00e0 19:31, Timothy Carambat ***@***.***> a\r\n\u00e9crit :\r\n\r\n> *timothycarambat* left a comment (Mintplex-Labs/anything-llm#4347)\r\n> <https://github.com/Mintplex-Labs/anything-llm/pull/4347#issuecomment-3246035141>\r\n>\r\n> Seriously?\r\n>\r\n> \u2014\r\n> Reply to this email directly, view it on GitHub\r\n> <https://github.com/Mintplex-Labs/anything-llm/pull/4347#issuecomment-3246035141>,\r\n> or unsubscribe\r\n> <https://github.com/notifications/unsubscribe-auth/A4UFS6NMVWFPPWRAO5VCMGL3QXA6FAVCNFSM6AAAAACFJTTV2KVHI2DSMVQWIX3LMV43OSLTON2WKQ3PNVWWK3TUHMZTENBWGAZTKMJUGE>\r\n> .\r\n> You are receiving this because you authored the thread.Message ID:\r\n> ***@***.***>\r\n>\r\n"
+            }
+        ]
+    },
+    {
+        "pr_id": 4345,
+        "comments": []
+    },
+    {
+        "pr_id": 4344,
+        "comments": [
+            {
+                "login": "DangerousBerries",
+                "author_association": "NONE",
+                "comment": "Thanks I hope that's implemented."
+            }
+        ]
+    },
+    {
+        "pr_id": 4342,
+        "comments": []
+    },
+    {
+        "pr_id": 4331,
+        "comments": [
+            {
+                "login": "EfrosIonelu",
+                "author_association": "NONE",
+                "comment": "solved my issue :https://github.com/Mintplex-Labs/anything-llm/issues/4330"
+            },
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "This PR already exists #3483 - I know you already self assigned this but there is a reason that PR is not yet merged and is still open, there isnt anything wrong with that PR but we need to do some additional groundwork to enable this type of behavior - specifically #4279 "
+            }
+        ]
+    },
+    {
+        "pr_id": 4328,
+        "comments": []
+    },
+    {
+        "pr_id": 4322,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Please dont make PR's like this to the main repo and instead target your fork"
+            }
+        ]
+    },
+    {
+        "pr_id": 4317,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "The previous change here would execute all the batches at once, and they would all just wait at the same time instead of doing each batch sequentially with a wait in between. Refactored code solves this and was tested."
+            }
+        ]
+    },
+    {
+        "pr_id": 4307,
+        "comments": [
+            {
+                "login": "Chan9390",
+                "author_association": "NONE",
+                "comment": "While executing agent with GPT-5 (with temperature set as 1), I got the error: \r\n<img width=\"826\" height=\"123\" alt=\"image\" src=\"https://github.com/user-attachments/assets/caeb9a9a-debe-4d84-87d9-5582190db5f3\" />\r\n\r\nDoes this PR implicitly fix it? "
+            }
+        ]
+    },
+    {
+        "pr_id": 4305,
+        "comments": []
+    },
+    {
+        "pr_id": 4298,
+        "comments": []
+    },
+    {
+        "pr_id": 4296,
+        "comments": []
+    },
+    {
+        "pr_id": 4292,
+        "comments": []
+    },
+    {
+        "pr_id": 4291,
+        "comments": []
+    },
+    {
+        "pr_id": 4283,
+        "comments": []
+    },
+    {
+        "pr_id": 4281,
+        "comments": [
+            {
+                "login": "MateKristof",
+                "author_association": "CONTRIBUTOR",
+                "comment": "This update includes several follow-up fixes and refinements to the recently introduced features in the Chat Embed History view, addressing issues that were discovered during testing.\r\n\r\n### __Key Changes__\r\n\r\n1. __Robust Markdown Rendering:__\r\n\r\n   - __Problem:__ The initial implementation of the markdown renderer had issues with line breaks, causing either too much vertical space or rendering raw `<br>` tags.\r\n   - __Solution:__ The `MarkdownRenderer` component was completely refactored. It now uses a much more robust method of parsing the content into \"thinking\" and \"normal\" parts, and then renders them as separate React components. This approach avoids all the previous issues with string manipulation and HTML escaping, ensuring that the markdown is rendered correctly and reliably.\r\n\r\n2. __Improved \"Thinking\" View:__\r\n\r\n   - __Problem:__ The initial styling for the \"thinking\" text was not being applied correctly to multi-line content.\r\n   - __Solution:__ With the new rendering approach, the \"thinking\" text is now correctly wrapped in a styled component, ensuring that the blue color is applied to the entire block of text, regardless of how many lines it contains. A line break is also consistently added to separate it from the main response.\r\n\r\nThese refinements have significantly improved the stability and reliability of the new features, providing a much smoother and more polished user experience."
+            },
+            {
+                "login": "MateKristof",
+                "author_association": "CONTRIBUTOR",
+                "comment": "Thanks for the great feedback. I've updated the PR based on your suggestions:\r\n\r\n- __Backend changes have been reverted.__\r\n- __Session-based filtering and coloring have been removed.__\r\n- The improved markdown rendering and \"Show 'thinking'\" toggle are still in place.\r\n- The color for the \"thinking\" text now uses a theme variable (`--theme-button-cta`) to support both light and dark modes.\r\n\r\nThese changes simplify the implementation while keeping the core features. Let me know what you think.\r\n"
+            },
+            {
+                "login": "shatfield4",
+                "author_association": "COLLABORATOR",
+                "comment": "UI now looks like this in the text modal:\r\n<img width=\"757\" height=\"741\" alt=\"Screenshot 2025-09-17 at 5 54 21\u202fPM\" src=\"https://github.com/user-attachments/assets/7ab979bb-38b3-448a-9e9e-c50b314ce817\" />\r\n\r\n\r\nAlso modified the UI for showing thinking:\r\n<img width=\"263\" height=\"74\" alt=\"Screenshot 2025-09-17 at 5 54 55\u202fPM\" src=\"https://github.com/user-attachments/assets/abc36b08-3f9a-4dfb-a71d-c3cc81fe76aa\" />\r\n\r\n"
+            }
+        ]
+    },
+    {
+        "pr_id": 4279,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Adds support for the following models to support real-time tool call streaming of outputs:\r\n- [x] OpenAI\r\n- [x] Anthropic - Patched and thoroughly tested for message/function calling formatting\r\n- [x] LMStudio\r\n- [x] Ollama\r\n- [x] Groq\r\n- [x] TogetherAI\r\n- [x] AzureOpenAi\r\n- [x] LocalAI \r\n- [x] OpenRouter\r\n- [x] Mistral\r\n- [x] DeepSeek\r\n- [x] Perplexity\r\n- [x] FireworksAI\r\n- [x] LiteLLM\r\n- [x] ApiPie\r\n- [x] XAI\r\n- [x] Novita\r\n- [x] Moonshot\r\n- [x] NvidiaNim \r\n- [x] Gemini - supported, disabled on all non-gemini models (400/503 errors)\r\n- [x] DPAIS - Supported & tested\r\n- [x] GenericOpenAi - Support + honors no-streaming ENV\r\n\r\n-----\r\n- [x] Cohere (not supported for agents)\r\n- [x] AWSBedrock (broken for agents #3553)\r\n- [x] PPIO - disabled streaming, cannot test\r\n- [x] CometAPI - disabled stream, cannot test\r\n\r\n\r\n"
+            }
+        ]
+    },
+    {
+        "pr_id": 4278,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "Please run `yarn lint` before doing these PR's just to save time for merging :)\r\n> - [ ] I ran yarn lint from the root of the repo & committed changes"
+            }
+        ]
+    },
+    {
+        "pr_id": 4274,
+        "comments": [
+            {
+                "login": "AshikaAnand12",
+                "author_association": "CONTRIBUTOR",
+                "comment": "Hello,\r\nI normalized the translations and also verified translations. \r\nFor the css designs, I copied the same styles from other settings like `settings/text-splitter-preference` "
+            },
+            {
+                "login": "AshikaAnand12",
+                "author_association": "CONTRIBUTOR",
+                "comment": "Done. The translations are normalized, so there won't be any issue in another language but the values are set to null after I ran normalizeEn.mjs "
+            },
+            {
+                "login": "shatfield4",
+                "author_association": "COLLABORATOR",
+                "comment": "> Done. The translations are normalized, so there won't be any issue in another language but the values are set to null after I ran normalizeEn.mjs\r\n\r\nOkay so this will take a little more work to get this complete now. But as you can see after normalizing and linting all the files it makes it much easier to see what is being changed.\r\n\r\nYou are correct that all these keys are null in other languages and this is the problem with moving the existing keys around. The reason is because the normalize script is just checking all other translation files to ensure they contain the same structure as the English translations. If the keys are different, the script will automatically create matching keys by default and set them to null. In your PR it makes complete sense for moving these keys around and makes the translations structured better. \r\n\r\nWhat you will need to do in order to ensure we do not lose our existing translations from these files is to manually fill each one of the new null keys in with the previous translations. You can do this by opening the files changed tab in this PR and just copy manually each key to the new keys that were created. Once this is done we can get it merged in. Great work so far on your first contribution!"
+            },
+            {
+                "login": "AshikaAnand12",
+                "author_association": "CONTRIBUTOR",
+                "comment": "I added back the values for everything that was replaced to null. \r\nAfter making the change, I reran normalizeTranslations, verifyTranslations and yarn lint to ensure there is no discrepancy"
+            }
+        ]
+    },
+    {
+        "pr_id": 4273,
+        "comments": [
+            {
+                "login": "philipithomas",
+                "author_association": "NONE",
+                "comment": "Thank you!"
+            }
+        ]
+    },
+    {
+        "pr_id": 4271,
+        "comments": [
+            {
+                "login": "shatfield4",
+                "author_association": "COLLABORATOR",
+                "comment": "Closing and moving to #4273. Code looks okay here but the configuration screen makes setting up Chroma much more difficult and confusion for the average users. It's best we move it to it's own provider and separate the two to avoid setup confusion."
+            }
+        ]
+    },
+    {
+        "pr_id": 4266,
+        "comments": [
+            {
+                "login": "Vexdz007",
+                "author_association": "NONE",
+                "comment": "> [!CAUTION]\r\n>  "
+            }
+        ]
+    },
+    {
+        "pr_id": 4263,
+        "comments": []
+    },
+    {
+        "pr_id": 4261,
+        "comments": []
+    },
+    {
+        "pr_id": 4258,
+        "comments": [
+            {
+                "login": "timothycarambat",
+                "author_association": "MEMBER",
+                "comment": "@naaa760 Thank you for the contribution! In the future, can you please robustly test these types of integrations? From its original state:\r\n\r\n- Missing image crashed the UI on the agent skills page\r\n- ENV or settings where selecting Exa as the provider did not save or persist\r\n- Missing ENV entries for `updateENV` and `systemSettings` return objects (could reference another provider for all locations)\r\n\r\nOtherwise the code looks functionally correct and should work in terms of the actual provider, it just seems like everything around that was undone or unverified as working.\r\n"
+            },
+            {
+                "login": "naaa760",
+                "author_association": "CONTRIBUTOR",
+                "comment": "@timothycarambat \r\nSure I will keep remember for next time!"
+            }
+        ]
+    },
+    {
+        "pr_id": 4248,
+        "comments": []
+    },
+    {
+        "pr_id": 4247,
+        "comments": [
+            {
+                "login": "dp-studio",
+                "author_association": "CONTRIBUTOR",
+                "comment": "Feel free to let me know if I can provide any further assistance with this PR.\r\n"
+            }
+        ]
+    },
+    {
+        "pr_id": 4241,
+        "comments": []
+    },
+    {
+        "pr_id": 4235,
+        "comments": []
+    },
+    {
+        "pr_id": 4234,
+        "comments": []
+    },
+    {
+        "pr_id": 4230,
+        "comments": []
+    }
+]
