@@ -75,5 +75,5 @@ if __name__ == "__main__":
     pull_requests = get_pull_requests(owner, repo_name, headers, query)
     list_comments = get_pr_comments(pull_requests, owner, repo_name, headers)
 
-    with open('pr_comments.json', 'w') as f:
+    with open('extractions/pr_comments.json', 'w') as f:
         js.dump(list_comments, f, indent=4)
