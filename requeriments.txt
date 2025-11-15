@@ -1,0 +1,9 @@
+#Biblioteca necessária para as extrações dos comentários das pull requests do projeto no github
+requests
+#Biblioteca para gerenciamento e utilização de modelos do Hugging Face
+transformers
+#Biblioteca necessárias para criação dos gráficos da análise de sentimentos
+matplotlib
+numpy
+#Biblioteca necessária para rodar o notebook main.ipynb responsável por gerar o arquivo de classificação e os gráficos
+jupyter
