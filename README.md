@@ -25,9 +25,9 @@ O projeto foi executado no ambiente de núvem do Google Colab com:
    ```bash
    python extract_github_pr_comments.py
    ```
-4. Após isso, os comentários extraído ficarão salvos no arquivo `pr_comments.json` na pasta `extractions/`.
-5. A partir disso, basta abrir o notebook `main.ipynb` disponibilizado no repositório e executar as células em ordem para que seja gerado o arquivo de classificação e geração dos gráficos.
-6. Ao final, os comentários classificados ficarão salvos no arquivo `pr_comments_classified.json` na pasta `classifications/` e os gráficos contendos os dados resumidos das classificações pelos modelos no próprio notebook disponibilizado.
+4. Após finalizar a execução, os comentários extraídos ficarão salvos no arquivo `pr_comments.json` na pasta `extractions/`.
+5. A partir disso, basta abrir o notebook `main.ipynb` disponibilizado no repositório e executar as células, em ordem, para a criação do arquivo de classificação dos comentários das PR's e geração dos gráficos no notebook contendo os resumos da análise de sentimentos de cada modelo.
+6. Ao final, os comentários classificados ficarão salvos no arquivo `pr_comments_classified.json` na pasta `classifications/`.
 
 ## Modelo Utilizados
 
