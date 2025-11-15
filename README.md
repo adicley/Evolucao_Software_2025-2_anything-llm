@@ -5,6 +5,7 @@
 A atividade 1 consiste em extrair os comentários das 100 pull requests consecutivas de um projeto bem-sucedidos do github, no caso da equipe 3, o projeto escolhido foi [anything-llm](https://github.com/Mintplex-Labs/anything-llm), e, com os dados colatados na extração das pull requests, realizar a análise de sentimentos de todos os comentários utilizandos três LLM's de classificação de texto disponibilizados no portal [Hugging Face](https://huggingface.co/models?language=en&sort=trending&search=sentiment).
 
 ## Requisitos de Hardware
+
 O projeto foi executado no ambiente de núvem do Google Colab com:
 - GPU: T4 15GB VRAM
 - RAM do sistema: 12.77GB
@@ -29,6 +30,7 @@ O projeto foi executado no ambiente de núvem do Google Colab com:
 6. Ao final, os comentários classificados ficarão salvos no arquivo `pr_comments_classified.json` na pasta `classifications/` e os gráficos contendos os dados resumidos das classificações pelos modelos no próprio notebook disponibilizado.
 
 ## Modelo Utilizados
+
 1. O primeiro modelo de classificação de texto escolhido foi o [clapAI/modernBERT-large-multilingual-sentiment](https://huggingface.co/clapAI/modernBERT-large-multilingual-sentiment), um modelo large com 400M de parâmetros, janela de contexto de 8.192K de tokens, o qual passou por um ajuste fino utilizando o dataset [clapAI/MultiLingualSentiment](https://huggingface.co/datasets/clapAI/MultiLingualSentiment).
-2. O segundo modelo foi o [lxyuan/distilbert-base-multilingual-cased-sentiments-student](https://huggingface.co/lxyuan/distilbert-base-multilingual-cased-sentiments-student), um modelo base com 100M de parâmetros, janela de contexto de 512 tokens que passou por um ajuste fino ao ser treinado com o dataset [lxyuan/distilbert-base-multilingual-cased-sentiments-student](https://huggingface.co/lxyuan/distilbert-base-multilingual-cased-sentiments-student).
+2. O segundo modelo foi o [lxyuan/distilbert-base-multilingual-cased-sentiments-student](https://huggingface.co/lxyuan/distilbert-base-multilingual-cased-sentiments-student), um modelo base com 100M de parâmetros, janela de contexto de 512 tokens que passou por um ajuste fino ao ser treinado com o dataset [tyqiangz/multilingual-sentiments](https://huggingface.co/datasets/tyqiangz/multilingual-sentiments).
 3. O terceiro modelo foi o [clapAI/roberta-large-multilingual-sentiment](https://huggingface.co/clapAI/roberta-large-multilingual-sentiment), um modelo large com 600M de parâmetros, janela de contexto de 514 tokens que passou por um ajuste fino utilizando o mesmo dataset do primeiro modelo desta lista.
