@@ -6,9 +6,9 @@ A atividade 1 consiste em extrair os comentários das 100 pull requests consecut
 
 ## Instruções para execução da atividade
 
-1. Instale a dependência:
+1. Clone o repositório e instale as dependências:
    ```bash
-   pip install requests
+   pip install -r requirements.txt
    ```
 1. Inclua seu token do Github no script `extract_github_pr_comments.py` disponibilizado na pasta `script/` no campo:
    ```ini
