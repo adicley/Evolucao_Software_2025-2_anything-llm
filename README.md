@@ -6,7 +6,7 @@ A atividade 1 consiste em extrair os comentários das 100 pull requests consecut
 
 ## Requisitos de Hardware
 
-O projeto foi executado no ambiente de núvem do Google Colab com:
+O projeto foi executado no ambiente de nuvem do Google Colab com:
 - GPU: T4 15GB VRAM
 - RAM do sistema: 12.77GB
 - Disco: 112GB
